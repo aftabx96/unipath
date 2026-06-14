@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniPath — Pakistan Admission Counselor</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#overview" aria-label="UniPath home">
+          <img class="brand-logo" src="logo.svg" alt="" />
+          <span class="brand-text">
+            <strong>UniPath</strong>
+            <small>Pakistan Admissions</small>
+          </span>
+        </a>
+
+        <nav class="nav-list" aria-label="Primary navigation">
+          <button class="nav-item active" data-view="overview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+            Overview
+          </button>
+          <button class="nav-item" data-view="explore">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+            Universities
+          </button>
+          <button class="nav-item" data-view="deadlines">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>
+            Deadlines
+            <span class="badge" id="deadlineBadge" hidden>0</span>
+          </button>
+          <button class="nav-item" data-view="shortlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            Shortlist
+            <span class="badge" id="shortlistBadge" hidden>0</span>
+          </button>
+          <button class="nav-item" data-view="compare">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3v18M15 3v18M3 9h18M3 15h18" opacity=".3"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+            Compare
+            <span class="badge" id="compareBadge" hidden>0</span>
+          </button>
+
+          <span class="nav-section-label">AI Tools</span>
+          <button class="nav-item" data-view="recommend">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 6.5L21 9l-5 4.2L17.6 20 12 16.4 6.4 20 8 13.2 3 9l6.6-.5z"/></svg>
+            Recommend
+          </button>
+          <button class="nav-item" data-view="predict">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 7-7M14 5h6v6"/></svg>
+            Predict
+          </button>
+          <button class="nav-item" data-view="similar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="4"/><circle cx="17" cy="17" r="4"/><path d="M10 10l4 4"/></svg>
+            Similar
+          </button>
+          <button class="nav-item" data-view="tiers">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+            Tiers
+          </button>
+          <button class="nav-item" data-view="chat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l.8-5.5A8 8 0 1 1 21 12z"/></svg>
+            AI Chat
+          </button>
+
+          <span class="nav-section-label">Info</span>
+          <button class="nav-item" data-view="about">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            About
+          </button>
+        </nav>
+
+        <div class="sidebar-foot">
+          <div class="theme-block">
+            <span>Theme</span>
+            <div class="swatches" id="swatches">
+              <button class="swatch sw-light" data-theme-val="light" title="Light" aria-pressed="true"></button>
+              <button class="swatch sw-dark" data-theme-val="dark" title="Dark" aria-pressed="false"></button>
+              <button class="swatch sw-ocean" data-theme-val="ocean" title="Ocean" aria-pressed="false"></button>
+              <button class="swatch sw-sunset" data-theme-val="sunset" title="Sunset" aria-pressed="false"></button>
+              <button class="swatch sw-grape" data-theme-val="grape" title="Grape" aria-pressed="false"></button>
+              <button class="swatch sw-mono" data-theme-val="mono" title="Mono" aria-pressed="false"></button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="top-panel">
+          <div class="top-deco"></div>
+          <div class="top-deco-2"></div>
+          <div class="top-content">
+            <p class="eyebrow">Smart admission workspace</p>
+            <h1>Find Pakistani universities that match your merit, budget, city, and goals.</h1>
+            <p>Browse 60+ universities across every province, track application deadlines, predict your chances with ML models, and get instant answers from the AI counselor.</p>
+            <div class="top-badges">
+              <span class="top-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg>
+                60+ Universities
+              </span>
+              <span class="top-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>
+                Deadline Tracker
+              </span>
+              <span class="top-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 6.5L21 9l-5 4.2L17.6 20 12 16.4 6.4 20 8 13.2 3 9l6.6-.5z"/></svg>
+                AI Counselor
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <!-- OVERVIEW -->
+        <section class="view active" id="overview">
+          <div class="stat-grid">
+            <article class="stat-card"><span>Total Universities</span><strong id="totalUniversities">--</strong></article>
+            <article class="stat-card"><span>Cities Covered</span><strong id="totalCities">--</strong></article>
+            <article class="stat-card"><span>Average Fee / Semester</span><strong id="averageFee">--</strong></article>
+            <article class="stat-card"><span>GOATED UNIVERSITY</span><strong >SZABIST UNIVERSITY</strong></article>
+          </div>
+
+          <div class="section-head">
+            <div>
+              <h2>Top-Ranked To Start</h2>
+              <p>Highest HEC-ranked universities in the database.</p>
+            </div>
+          </div>
+          <div class="university-grid" id="featuredGrid"></div>
+        </section>
+
+        <!-- UNIVERSITIES (search lives here only) -->
+        <section class="view" id="explore">
+          <div class="section-head">
+            <div>
+              <h2>University Explorer</h2>
+              <p>Search, filter, and shortlist available options.</p>
+            </div>
+          </div>
+          <div class="filter-row" style="margin-bottom:18px">
+            <div class="search-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+              <input id="exploreSearch" type="search" placeholder="Search FAST, Karachi, CS, Medicine..." aria-label="Search universities" />
+            </div>
+            <select id="cityFilter" aria-label="Filter by city"><option value="">All cities</option></select>
+            <select id="provinceFilter" aria-label="Filter by province"><option value="">All provinces</option></select>
+            <select id="programFilter" aria-label="Filter by program"><option value="">All programs</option></select>
+            <select id="sortFilter" aria-label="Sort universities">
+              <option value="rank">Sort: HEC rank</option>
+              <option value="fee">Sort: Lowest fee</option>
+              <option value="merit">Sort: Lowest merit</option>
+              <option value="deadline">Sort: Deadline</option>
+              <option value="name">Sort: Name</option>
+            </select>
+          </div>
+          <div class="university-grid" id="universityGrid"></div>
+        </section>
+
+        <!-- DEADLINES -->
+        <section class="view" id="deadlines">
+          <div class="section-head">
+            <div>
+              <h2>Deadline Tracker</h2>
+              <p>Countdown to every admission deadline. Star a university to pin it to your tracker.</p>
+            </div>
+            <div class="filter-row">
+              <select id="deadlineScope" aria-label="Deadline scope">
+                <option value="tracked">Tracked only</option>
+                <option value="all">All upcoming</option>
+              </select>
+            </div>
+          </div>
+          <div id="deadlineList"></div>
+        </section>
+
+        <!-- SHORTLIST -->
+        <section class="view" id="shortlist">
+          <div class="section-head">
+            <div>
+              <h2>My Shortlist</h2>
+              <p>Universities you saved. Stored locally in your browser.</p>
+            </div>
+            <button class="ghost-btn" id="exportShortlist">Export (.csv)</button>
+          </div>
+          <div class="university-grid" id="shortlistGrid"></div>
+        </section>
+
+        <!-- COMPARE -->
+        <section class="view" id="compare">
+          <div class="section-head">
+            <div>
+              <h2>Compare Universities</h2>
+              <p>Add up to 4 universities side by side from any card.</p>
+            </div>
+            <button class="ghost-btn" id="clearCompare">Clear all</button>
+          </div>
+          <div id="compareArea"></div>
+        </section>
+
+        <!-- RECOMMEND -->
+        <section class="view" id="recommend">
+          <div class="workspace-grid">
+            <form class="tool-panel" id="recommendForm">
+              <h2>Recommendation Finder</h2>
+              <label>Merit percentage
+                <input type="number" name="merit" min="0" max="100" step="0.1" value="75" required />
+              </label>
+              <label>Semester budget (PKR)
+                <input type="number" name="budget" min="0" step="5000" value="200000" required />
+              </label>
+              <label>City
+                <select name="city" id="recommendCity"><option value="">Any city</option></select>
+              </label>
+              <label>Program
+                <select name="program" id="recommendProgram"><option value="">Any program</option></select>
+              </label>
+              <button class="primary-btn" type="submit">Get Recommendations</button>
+            </form>
+            <div>
+              <div class="result-banner" id="recommendMessage">Set your merit and budget, then get matches.</div>
+              <div class="university-grid compact" id="recommendResults"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PREDICT -->
+        <section class="view" id="predict">
+          <div class="workspace-grid">
+            <form class="tool-panel" id="predictForm">
+              <h2>Admission Prediction</h2>
+              <label>Your merit percentage
+                <input type="number" name="merit" min="0" max="100" step="0.1" value="78" required />
+              </label>
+              <label>University
+                <select name="university" id="predictUniversity" required></select>
+              </label>
+              <button class="primary-btn" type="submit">Predict Chance</button>
+              <span class="hint">Uses the backend Decision Tree + merit-range rules. Falls back to a local estimate if the API is offline.</span>
+            </form>
+            <article class="prediction-card" id="predictionCard">
+              <span class="muted">No prediction yet — choose a university and your merit.</span>
+            </article>
+          </div>
+        </section>
+
+        <!-- SIMILAR -->
+        <section class="view" id="similar">
+          <div class="workspace-grid">
+            <form class="tool-panel" id="similarForm">
+              <h2>Similar Universities</h2>
+              <label>University
+                <select name="university" id="similarUniversity" required></select>
+              </label>
+              <button class="primary-btn" type="submit">Find Similar</button>
+              <span class="hint">KNN finds universities with the closest merit, fee, and ranking profile.</span>
+            </form>
+            <div>
+              <div class="result-banner" id="similarMessage">Choose a university to find close matches.</div>
+              <div class="university-grid compact" id="similarResults"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TIERS -->
+        <section class="view" id="tiers">
+          <div class="section-head">
+            <div>
+              <h2>University Tiers</h2>
+              <p>K-Means groups universities into Budget, Mid-Range, and Premium tiers by fee and ranking.</p>
+            </div>
+          </div>
+          <div class="tier-grid" id="tierGrid"></div>
+        </section>
+
+        <!-- CHAT -->
+        <section class="view" id="chat">
+          <div class="chat-shell">
+            <div class="chat-head">
+              <span class="dot"></span>
+              <strong>UniPath AI Counselor</strong>
+              <span class="mode" id="chatMode">Connecting…</span>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+              <div class="message bot">Assalam-o-Alaikum! I'm your admission counselor. Ask me about merit cutoffs, fees, cities, programs, or deadlines for any university in the database.</div>
+            </div>
+            <div class="chat-suggest" id="chatSuggest">
+              <button class="chip">Cheapest CS universities?</button>
+              <button class="chip">Universities in Lahore under 100,000</button>
+              <button class="chip">Which deadlines are closing soon?</button>
+            </div>
+            <form class="chat-form" id="chatForm">
+              <input name="message" type="text" placeholder="Ask about merit, fees, cities, programs..." autocomplete="off" required />
+              <button class="primary-btn" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+          <!-- ABOUT -->
+        <section class="view" id="about">
+          <div class="section-head">
+            <div>
+              <h2>About UniPath</h2>
+              <p>Who we are and what we built.</p>
+            </div>
+          </div>
+
+          <div class="about-grid">
+            <!-- About the platform -->
+            <div class="about-platform">
+              <div class="about-logo-row">
+                <img class="about-logo" src="logo.svg" alt="UniPath logo" />
+                <div>
+                  <h3 class="about-title">UniPath</h3>
+                  <span class="about-sub">Pakistan Admission Counselor</span>
+                </div>
+              </div>
+              <p class="about-desc">
+                UniPath is a smart, all-in-one admission workspace built specifically for Pakistani students. Finding the right university can be overwhelming — dozens of institutions, varying merit cutoffs, fee structures, deadlines, and cities to consider all at once.
+              </p>
+              <p class="about-desc">
+                We built UniPath to simplify that journey. Browse and filter <strong>60+ universities</strong> across every province, track application deadlines, compare institutions side by side, and get AI-powered recommendations tailored to your merit and budget — all in one place.
+              </p>
+              <div class="about-features">
+                <div class="about-feat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V9l7-5 7 5v12"/></svg>
+                  <div>
+                    <strong>University Explorer</strong>
+                    <span>Search and filter 60+ universities by city, province, program, merit, and fee.</span>
+                  </div>
+                </div>
+                <div class="about-feat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 7-7M14 5h6v6"/></svg>
+                  <div>
+                    <strong>ML-Powered Predictions</strong>
+                    <span>A Decision Tree model predicts your admission chances based on your merit percentage.</span>
+                  </div>
+                </div>
+                <div class="about-feat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>
+                  <div>
+                    <strong>Deadline Tracker</strong>
+                    <span>Live countdowns for every admission deadline so you never miss a closing date.</span>
+                  </div>
+                </div>
+                <div class="about-feat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l.8-5.5A8 8 0 1 1 21 12z"/></svg>
+                  <div>
+                    <strong>AI Counselor</strong>
+                    <span>Chat with an AI trained on the university database for instant, contextual advice.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <!-- Team -->
+            <div class="about-team">
+              <h3 class="about-team-title">Meet the Team</h3>
+              <p class="about-team-sub">UniPath was developed in collaboration by three dedicated students of SZABIST passionate about making higher education more accessible in Pakistan.</p>
+              <div class="team-cards">
+                <div class="team-card">
+                  <div class="team-avatar" style="--av: #10805c">A</div>
+                  <div class="team-info">
+                    <strong>Aftab Ahmed Samoo</strong>
+                    
+                  </div>
+                </div>
+                <div class="team-card">
+                  <div class="team-avatar" style="--av: #1f6fd6">J</div>
+                  <div class="team-info">
+                    <strong>Javeria Masroor</strong>
+                    
+                  </div>
+                </div>
+                <div class="team-card">
+                  <div class="team-avatar" style="--av: #a78bfa">L</div>
+                  <div class="team-info">
+                    <strong>Laiba Aamir</strong>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="universities-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

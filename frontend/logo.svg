@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UniPath logo">
+  <defs>
+    <linearGradient id="ucg" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="var(--logo-a, #1f9d6b)"/>
+      <stop offset="1" stop-color="var(--logo-b, #0e6b6f)"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#ucg)"/>
+  <!-- graduation cap -->
+  <path d="M24 12 L39 19 L24 26 L9 19 Z" fill="#ffffff"/>
+  <path d="M16 22.2 V29 C16 31.8 19.6 33.6 24 33.6 C28.4 33.6 32 31.8 32 29 V22.2 L24 26 Z" fill="#ffffff" fill-opacity="0.82"/>
+  <!-- tassel -->
+  <path d="M39 19 V27" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="39" cy="28.4" r="1.9" fill="#ffffff"/>
+</svg>

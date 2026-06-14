@@ -1,0 +1,62 @@
+name,city,province,programs,min_merit,max_merit,fee_per_year,hostel,hec_rank,website,deadline
+FAST NUCES,Karachi,Sindh,"CS, AI, SE, DS",75,95,180000,Yes,1,nu.edu.pk,2026-08-15
+NED University,Karachi,Sindh,"Engineering, CS, Architecture",70,92,45000,Yes,4,neduet.edu.pk,2026-07-30
+IBA Karachi,Karachi,Sindh,"Business, CS, Economics",72,93,250000,Yes,6,iba.edu.pk,2026-07-20
+Aga Khan University,Karachi,Sindh,"Medicine, Nursing, Education",85,98,500000,Yes,6,aku.edu.pk,2026-07-15
+University of Karachi,Karachi,Sindh,"Arts, Science, Commerce, Law, Pharmacy",55,82,15000,Yes,9,uok.edu.pk,2026-09-10
+Bahria University,Karachi,Sindh,"CS, Engineering, Business",62,86,140000,Yes,10,bahria.edu.pk,2026-08-30
+SZABIST,Karachi,Sindh,"CS, Business, Media Sciences, Engineering",65,88,180000,Yes,13,szabist.edu.pk,2026-08-18
+Sir Syed University,Karachi,Sindh,"Engineering, CS, Business",60,85,120000,Yes,18,ssuet.edu.pk,2026-09-08
+DOW University of Health Sciences,Karachi,Sindh,"Medicine, Dentistry, Pharmacy, Nursing",82,97,55000,Yes,19,duhs.edu.pk,2026-07-28
+Habib University,Karachi,Sindh,"CS, Engineering, Social Sciences, Liberal Arts",74,94,600000,Yes,20,habib.edu.pk,2026-08-05
+Mehran University,Jamshoro,Sindh,"Engineering, CS, Architecture",65,88,30000,Yes,17,muet.edu.pk,2026-09-20
+University of Sindh,Jamshoro,Sindh,"Arts, Science, Law, Commerce, IT",52,80,18000,Yes,30,usindh.edu.pk,2026-09-25
+Liaquat Univ of Medical Sciences,Jamshoro,Sindh,"Medicine, Dentistry, Nursing",80,96,40000,Yes,26,lumhs.edu.pk,2026-07-22
+Sukkur IBA University,Sukkur,Sindh,"CS, Business, Education, Engineering",66,89,90000,Yes,16,iba-suk.edu.pk,2026-08-12
+Shah Abdul Latif University,Khairpur,Sindh,"Arts, Science, IT, Commerce",50,78,16000,Yes,38,salu.edu.pk,2026-09-18
+QUEST Nawabshah,Nawabshah,Sindh,"Engineering, CS, Architecture",58,84,28000,Yes,33,quest.edu.pk,2026-09-12
+FAST NUCES,Lahore,Punjab,"CS, AI, SE",78,96,185000,Yes,1,nu.edu.pk,2026-08-20
+UET Lahore,Lahore,Punjab,"Engineering, CS",75,94,60000,Yes,3,uet.edu.pk,2026-08-10
+LUMS,Lahore,Punjab,"Business, CS, Law, Economics",78,97,650000,Yes,5,lums.edu.pk,2026-08-01
+UCP Lahore,Lahore,Punjab,"CS, Business, Engineering",60,85,150000,Yes,12,ucp.edu.pk,2026-09-01
+Punjab University,Lahore,Punjab,"Arts, Science, Law, Engineering, IT",55,85,20000,Yes,11,pu.edu.pk,2026-09-05
+GC University Lahore,Lahore,Punjab,"Science, Arts, Business, IT",62,87,35000,Yes,21,gcu.edu.pk,2026-08-28
+University of Lahore,Lahore,Punjab,"CS, Engineering, Medicine, Business",58,84,165000,Yes,22,uol.edu.pk,2026-09-03
+UMT Lahore,Lahore,Punjab,"CS, Business, Engineering, Law",59,84,160000,Yes,24,umt.edu.pk,2026-09-06
+King Edward Medical University,Lahore,Punjab,"Medicine, Dentistry",88,99,65000,Yes,14,kemu.edu.pk,2026-07-18
+FC College (FCCU),Lahore,Punjab,"CS, Business, Sciences, Humanities",64,88,220000,Yes,23,fccollege.edu.pk,2026-08-26
+UVAS Lahore,Lahore,Punjab,"Veterinary, Animal Sciences, Biotech",60,85,45000,Yes,27,uvas.edu.pk,2026-08-24
+UET Taxila,Taxila,Punjab,"Engineering, CS",68,90,55000,Yes,15,uettaxila.edu.pk,2026-08-14
+University of Faisalabad (UAF),Faisalabad,Punjab,"Agriculture, Science, Vet, Engineering",58,85,40000,Yes,25,uaf.edu.pk,2026-08-29
+GC University Faisalabad,Faisalabad,Punjab,"Science, Arts, IT, Business",56,83,30000,Yes,34,gcuf.edu.pk,2026-09-09
+NTU Faisalabad,Faisalabad,Punjab,"Textile, Engineering, CS, Design",60,85,80000,Yes,29,ntu.edu.pk,2026-08-21
+Bahauddin Zakariya University,Multan,Punjab,"Engineering, Arts, Science, Pharmacy",55,83,28000,Yes,28,bzu.edu.pk,2026-09-14
+MNS UET Multan,Multan,Punjab,"Engineering, CS",60,86,50000,Yes,31,mnsuet.edu.pk,2026-08-19
+Islamia University Bahawalpur,Bahawalpur,Punjab,"Arts, Science, Engineering, IT, Pharmacy",53,82,25000,Yes,32,iub.edu.pk,2026-09-16
+University of Gujrat,Gujrat,Punjab,"CS, Business, Engineering, Arts",54,82,38000,Yes,36,uog.edu.pk,2026-09-11
+University of Sargodha,Sargodha,Punjab,"Science, Arts, Business, IT",53,81,26000,Yes,37,su.edu.pk,2026-09-13
+UET Lahore (RCET Gujranwala),Gujranwala,Punjab,"Engineering, CS",62,86,52000,Yes,35,uet.edu.pk,2026-08-16
+University of Sialkot,Sialkot,Punjab,"CS, Business, Engineering",52,80,95000,Yes,40,uskt.edu.pk,2026-09-22
+Wah Engineering College,Wah Cantt,Punjab,"Engineering, CS",58,84,60000,Yes,39,wecuw.edu.pk,2026-08-27
+PIEAS,Islamabad,Punjab,"Engineering, Physics, CS, Nuclear",82,98,40000,Yes,2,pieas.edu.pk,2026-07-26
+NUST,Islamabad,Federal,"Engineering, CS, AI, Business",80,98,200000,Yes,2,nust.edu.pk,2026-07-25
+COMSATS,Islamabad,Federal,"CS, Engineering, Biology",65,88,120000,Yes,8,comsats.edu.pk,2026-08-25
+Quaid-i-Azam University,Islamabad,Federal,"Social Sciences, Chemistry, Physics, Biology",65,88,25000,Yes,7,qau.edu.pk,2026-08-05
+Air University,Islamabad,Federal,"CS, Engineering, Business, Aviation",65,88,120000,Yes,14,au.edu.pk,2026-08-22
+FAST NUCES,Islamabad,Federal,"CS, AI, SE, EE",76,95,185000,Yes,1,nu.edu.pk,2026-08-17
+International Islamic University,Islamabad,Federal,"CS, Engineering, Law, Islamic Studies",58,84,55000,Yes,26,iiu.edu.pk,2026-09-02
+Bahria University,Islamabad,Federal,"CS, Engineering, Business, Psychology",63,87,145000,Yes,10,bahria.edu.pk,2026-08-31
+Riphah International University,Rawalpindi,Federal,"Medicine, CS, Engineering, Business",60,86,160000,Yes,27,riphah.edu.pk,2026-09-04
+Arid Agriculture University,Rawalpindi,Federal,"Agriculture, CS, Business, Vet",55,82,35000,Yes,30,uaar.edu.pk,2026-09-07
+NUML Islamabad,Islamabad,Federal,"Languages, CS, Business, IR",57,83,70000,Yes,28,numl.edu.pk,2026-08-23
+GIK Institute,Topi,KPK,"Engineering, CS",75,94,200000,Yes,5,giki.edu.pk,2026-08-12
+UET Peshawar,Peshawar,KPK,"Engineering, CS, Architecture",66,89,42000,Yes,13,uetpeshawar.edu.pk,2026-08-11
+University of Peshawar,Peshawar,KPK,"Arts, Science, Law, Pharmacy",54,82,22000,Yes,24,uop.edu.pk,2026-09-17
+Khyber Medical University,Peshawar,KPK,"Medicine, Dentistry, Allied Health",83,97,60000,Yes,22,kmu.edu.pk,2026-07-24
+CECOS University,Peshawar,KPK,"Engineering, CS, Management",56,83,110000,Yes,41,cecos.edu.pk,2026-09-19
+COMSATS Abbottabad,Abbottabad,KPK,"CS, Engineering, Biosciences",62,86,115000,Yes,18,cuiatd.edu.pk,2026-08-25
+Abdul Wali Khan University,Mardan,KPK,"Science, Arts, CS, Business",52,80,24000,Yes,42,awkum.edu.pk,2026-09-21
+University of Balochistan,Quetta,Balochistan,"Arts, Science, Law, IT",50,78,20000,Yes,43,uob.edu.pk,2026-09-24
+BUITEMS,Quetta,Balochistan,"Engineering, CS, Management, ICT",55,82,45000,Yes,34,buitems.edu.pk,2026-08-22
+Mirpur Univ of Sci & Tech (MUST),Mirpur,AJK,"Engineering, CS, Business",56,83,40000,Yes,44,must.edu.pk,2026-09-15
+Karakoram International University,Gilgit,GB,"Science, Arts, CS, Business",50,78,30000,Yes,45,kiu.edu.pk,2026-09-23
