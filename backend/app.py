@@ -1,23 +1,4 @@
-"""
-UniPath — University Admission Counselor (Flask Backend)
-========================================================
-ML Models:
-  - KMeans        : University tier clustering (Budget / Mid-Range / Premium)
-  - Decision Tree : Admission likelihood signal
-  - KNN           : Find similar universities
 
-AI Chat:
-  - Groq (free tier). Model: llama-3.1-8b-instant
-  - IMPORTANT: the old "llama3-8b-8192" model was decommissioned by Groq
-    (announced 31 May 2025). Requesting it returns a 400 "model_decommissioned"
-    error — that is why the chat used to fail. We now use a supported model and
-    fall back to a local, data-grounded answer if Groq is unavailable.
-
-Setup:
-  pip install -r requirement.txt
-  Create backend/.env with:  GROQ_API_KEY=your_key_here   (free at console.groq.com)
-  python backend/app.py
-"""
 
 from flask import Flask, jsonify, request
 from flask_cors import CORS

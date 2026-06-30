@@ -40,11 +40,10 @@ admission-counselor/
 ```bash
 cd admission-counselor
 python -m venv backend/venv
-# Windows: backend\venv\Scripts\activate
-source backend/venv/bin/activate
+ Windows: .\venv\Scripts\activate
+
 pip install -r requirement.txt
 
-cp backend/.env.example backend/.env   # then edit and paste your Groq key
 python backend/app.py                  # runs on http://127.0.0.1:5000
 ```
 
